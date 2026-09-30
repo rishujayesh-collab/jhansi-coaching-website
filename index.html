@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jhansi Coaching Classes - Best Coaching in Jhansi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+<!-- Header -->
+<header class="bg-white shadow p-4 flex justify-between items-center">
+<h1 class="text-xl font-bold text-blue-700">Jhansi Coaching Classes</h1>
+<a href="https://wa.me/919999999999?text=Sir%20Admission%20Chahiye" class="bg-green-500 text-white px-4 py-2 rounded-full">WhatsApp</a>
+</header>
+
+<!-- Hero -->
+<section class="text-center p-10 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+<h2 class="text-3xl font-bold mb-2">Jhansi's No.1 Coaching for Class 10, 12 & Competitive</h2>
+<p class="mb-4">1000+ Students Selected | Top Results in Jhansi</p>
+<a href="#courses" class="bg-white text-blue-700 px-6 py-3 rounded-full font-bold">View Courses</a>
+</section>
+
+<!-- Courses -->
+<section id="courses" class="p-6 grid md:grid-cols-3 gap-4">
+<div class="bg-white p-5 rounded-xl shadow">
+<h3 class="font-bold text-lg">Class 10th (CBSE/MP Board)</h3>
+<p class="text-gray-600 text-sm mt-2">Full Syllabus + Test Series + Doubt Class</p>
+<p class="font-bold mt-2">Fees: ₹1500/month</p>
+</div>
+<div class="bg-white p-5 rounded-xl shadow">
+<h3 class="font-bold text-lg">Class 12th Science</h3>
+<p class="text-gray-600 text-sm mt-2">Physics, Chemistry, Maths/Biology</p>
+<p class="font-bold mt-2">Fees: ₹2000/month</p>
+</div>
+<div class="bg-white p-5 rounded-xl shadow">
+<h3 class="font-bold text-lg">SSC / Railway / Police</h3>
+<p class="text-gray-600 text-sm mt-2">Jhansi Special Batch - Hindi Medium</p>
+<p class="font-bold mt-2">Fees: ₹2500/month</p>
+</div>
+</section>
+
+<!-- Enquiry -->
+<section class="p-6 bg-white m-6 rounded-xl shadow">
+<h3 class="font-bold text-center text-xl mb-4">Admission Enquiry</h3>
+<form onsubmit="whatsappSend(event)" class="flex flex-col gap-3">
+<input id="name" required placeholder="Apna Naam" class="border p-3 rounded">
+<input id="class" required placeholder="Class / Course" class="border p-3 rounded">
+<button class="bg-blue-600 text-white p-3 rounded font-bold">WhatsApp Pe Bhejo</button>
+</form>
+</section>
+
+<script>
+function whatsappSend(e){
+ e.preventDefault();
+ let name=document.getElementById('name').value;
+ let cls=document.getElementById('class').value;
+ let msg=`Hello Sir, Mera naam ${name} hai. Mujhe ${cls} me admission chahiye. Jhansi Coaching Website se dekha.`;
+ window.open(`https://wa.me/919999999999?text=${encodeURIComponent(msg)}`,'_blank');
+}
+</script>
+
+<footer class="text-center p-4 text-gray-500 text-sm">Made by Rishu | Jhansi Coaching Website Project</footer>
+</body>
+</html>
